@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NXTSOUL</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>Welcome to NXTSOUL</h1>
+  <ul>
+    <% products.forEach(p => { %>
+      <li>
+        <%= p.name %> - ₹<%= p.price %> 
+        <a href="/buy/<%= p.id %>">Buy</a>
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>
